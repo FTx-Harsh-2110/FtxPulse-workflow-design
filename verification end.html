@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Validation Completed</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#007bff",
+              "background-light": "#f5f7f8",
+              "background-dark": "#0f1923",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col items-center justify-center bg-background-light dark:bg-background-dark p-4 group/design-root" style="font-family: 'Inter', sans-serif;">
+<div class="relative w-full max-w-[475px] border border-[#cfdbe7] flex flex-col items-center justify-center rounded-xl bg-white dark:bg-slate-900 shadow-lg p-8 pb-10" style="height: 485px;">
+<!-- Confetti/Celebration visual element -->
+<div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 flex items-center justify-center">
+<span class="material-symbols-outlined text-green-500 text-8xl" data-icon="check_circle">check_circle</span>
+</div>
+<div class="flex flex-col items-center justify-center text-center mt-10">
+<!-- HeadlineText -->
+<h3 class="text-slate-900 dark:text-slate-50 tracking-light text-2xl font-bold leading-tight pb-2 pt-5">🎉 Hurray! Validation Completed</h3>
+<!-- Card (modified as Summary Box) -->
+<div class="w-full mt-6 bg-primary/10 dark:bg-primary/20 p-4 rounded-lg">
+<div class="flex flex-col items-stretch justify-center gap-1">
+<p class="text-primary dark:text-blue-300 text-lg font-bold leading-tight tracking-[-0.015em] text-center">174 products were not found in the FTX PULSE Database.</p>
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal text-center">These items will now go through our internal verification process.</p>
+</div>
+</div>
+<!-- BodyText -->
+<div class="flex items-center gap-2 mt-6">
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400" data-icon="dashboard">dashboard</span>
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal text-center">You can track verification progress in your FTX PULSE Dashboard.</p>
+</div>
+<!-- Spacer to push buttons down -->
+<div class="flex-grow"></div>
+<!-- ButtonGroup -->
+<div class="flex w-full flex-col items-stretch gap-3 pt-6">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] w-full hover:bg-blue-600 transition-colors" onclick="window.location.href='dashbord.html'">
+<span class="truncate">Go to Dashboard</span>
+</button>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-transparent text-slate-600 dark:text-slate-300 text-base font-bold leading-normal tracking-[0.015em] w-full border border-slate-300 dark:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="truncate">Close</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</body></html>

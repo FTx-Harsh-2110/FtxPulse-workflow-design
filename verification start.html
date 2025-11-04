@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FTX Pulse - Validating Data</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#007bff",
+              "background-light": "#f5f7f8",
+              "background-dark": "#0f1923",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+    <script>
+    // Change the page after 10 seconds
+    setTimeout(function() {
+      window.location.href = "verification end.html";
+    }, 5000);
+    </script>
+</head>
+<body class="font-display">
+<div class="relative flex min-h-screen w-full flex-col items-center justify-center bg-background-light dark:bg-background-dark group/design-root" style='font-family: Inter, "Noto Sans", sans-serif;'>
+<!-- Dimmed Overlay -->
+<div class="absolute inset-0 bg-black/40 bg-white"></div>
+<!-- Modal Container -->
+<div class="relative flex h-[485px] w-[475px] flex-col items-center justify-center gap-8 rounded-xl bg-white p-8 text-center shadow-lg dark:bg-slate-900 border border-[#cfdbe7]">
+<!-- Spinner / Progress Indicator -->
+<div class="relative h-24 w-24">
+<svg class="h-full w-full animate-spin text-primary" fill="none" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<circle cx="50" cy="50" r="45" stroke="currentColor" stroke-dasharray="282.74" stroke-dashoffset="212.05" stroke-linecap="round" stroke-width="6"></circle>
+</svg>
+</div>
+<!-- Text Content -->
+<div class="flex flex-col items-center gap-4">
+<h1 class="text-2xl font-bold text-slate-800 dark:text-slate-100">Validating Your Data</h1>
+<p class="max-w-xs text-base text-slate-500 dark:text-slate-400">Please wait while we compare your catalog with the FTX PULSE Database.</p>
+</div>
+<!-- Progress Bar (as requested in component list) -->
+<div class="w-full max-w-sm">
+<div class="flex flex-col gap-2">
+<div class="rounded-full bg-slate-200 dark:bg-slate-700">
+<div class="h-2 rounded-full bg-primary" style="width: 100%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>
