@@ -31,7 +31,8 @@
     </script>
 <style>
         .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0,
+            font-variation-settings:
+            'FILL' 0,
             'wght' 400,
             'GRAD' 0,
             'opsz' 24
@@ -40,68 +41,96 @@
 </head>
 <body class="font-display bg-background-light dark:bg-background-dark text-[#333333] dark:text-gray-200">
 <div class="relative flex min-h-screen w-full flex-col items-center justify-center p-4 group/design-root">
-<div class="w-full max-w-2xl rounded-xl bg-white dark:bg-[#1a233a] shadow-[0_8px_30px_rgba(0,0,0,0.1)] p-8 border border-[#cfdbe7]">
-<div class="flex flex-col gap-6" x-data="{ agreed: false }">
+<div class="w-full max-w-3xl rounded-xl bg-white dark:bg-[#1a233a] shadow-[0_8px_30px_rgba(0,0,0,0.1)] flex flex-col h-[90vh] max-h-[960px] border border-[#cfdbe7]">
+<div class="p-8 flex-shrink-0">
 <div class="flex flex-col gap-2 text-center">
-<h1 class=" dark:text-white text-3xl font-black leading-tight tracking-tight">Consent &amp; Disclosure for FTx Pulse</h1>
+<h1 class="dark:text-white text-3xl font-black leading-tight tracking-tight">Consent &amp; Disclosure for FTx Pulse</h1>
 <p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal">Before we proceed with module participation, please carefully read and acknowledge the following:</p>
 </div>
-<hr class="border-slate-200 dark:border-slate-700"/>
-<div class="flex flex-col gap-4">
-<div class="flex flex-col items-start justify-start gap-4 rounded-lg bg-[#f7f9fc] dark:bg-background-dark p-4">
-<div class="flex items-center gap-3">
-<div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/20 text-primary">
-<span class="material-symbols-outlined" data-icon="handshake">handshake</span>
+<hr class="border-slate-200 dark:border-slate-700 mt-6"/>
 </div>
-<p class=" dark:text-white text-lg font-bold">Purpose of Participating</p>
-</div>
+<div class="flex-grow overflow-y-auto px-8">
+<div class="flex flex-col gap-6">
+<div class="flex flex-col gap-3">
+<h2 class="text-lg font-bold text-primary dark:text-white">1. Purpose of Participating</h2>
 <p class="text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-300">You authorize sharing your store data with FasTraT POS LLC to enable FTx Pulse analytics and reporting that help you improve product setup and sales.</p>
 </div>
-<div class="flex flex-col items-start justify-start gap-4 rounded-lg bg-[#f7f9fc] dark:bg-background-dark p-4">
-<div class="flex items-center gap-3">
-<div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/20 text-primary">
-<span class="material-symbols-outlined" data-icon="database">database</span>
-</div>
-<p class=" dark:text-white text-lg font-bold">Information We Collect &amp; Process</p>
-</div>
-<div class="grid w-full grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-2">
-<div class="flex flex-col gap-1">
+<div class="flex flex-col gap-3">
+<h2 class="text-lg font-bold text-primary dark:text-white">2. Information We Collect &amp; Process</h2>
+<div class="flex flex-col gap-4">
+<div>
 <h3 class="font-semibold text-slate-800 dark:text-slate-200">Product Catalog</h3>
-<p class="text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-300">Match your catalog to our FTx Pulse Database. Unique products copied for review. Earn credits for approved contributions.</p>
+<p class="text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-300">We will access and process your product catalog information, including product names, descriptions, UPCs, categories, and pricing. This data will be compared against our Product Master Database (PMD) to identify matches and unique items. Unique products from your catalog may be copied and submitted for review to be potentially included in the PMD. You will earn credits for approved contributions.</p>
 </div>
-<div class="flex flex-col gap-1">
+<div>
 <h3 class="font-semibold text-slate-800 dark:text-slate-200">Sales Data</h3>
-<p class="text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-300">Identify trends and best sellers. Aggregate reports, benchmarks, and insights for growing your business.</p>
+<p class="text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-300">We will collect and analyze your sales data, such as transaction dates, quantities sold, and sales trends. This information is crucial for generating insights, identifying best-selling products, and providing you with aggregated reports and benchmarks to help you grow your business.</p>
 </div>
 </div>
 </div>
-<div class="flex flex-col items-start justify-start gap-4 rounded-lg bg-[#f7f9fc] dark:bg-background-dark p-4">
-<div class="flex items-center gap-3">
-<div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/20 text-primary">
-<span class="material-symbols-outlined" data-icon="share">share</span>
-</div>
-<p class=" dark:text-white text-lg font-bold">How Your Information Will Be Used &amp; Shared</p>
-</div>
-<ul class="list-disc space-y-1 pl-5 text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-300">
-<li>Analyze your product catalog and sales.</li>
-<li>Generate dashboards and reports.</li>
-<li>Securely protect data and provide module access.</li>
+<div class="flex flex-col gap-3">
+<h2 class="text-lg font-bold text-primary dark:text-white">3. How Your Information Will Be Used</h2>
+<ul class="list-disc space-y-2 pl-5 text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-300">
+<li>To analyze your product catalog and sales data for accuracy and completeness.</li>
+<li>To generate personalized dashboards, reports, and insights on your FTx Pulse account.</li>
+<li>To enhance and expand our Product Master Database (PMD) with new product information.</li>
+<li>To provide you with benchmarks and comparative analytics against anonymized, aggregated industry data.</li>
 </ul>
 </div>
+<div class="flex flex-col gap-3">
+<h2 class="text-lg font-bold text-primary dark:text-white">4. Sharing &amp; Disclosure</h2>
+<p class="text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-300">Your specific, identifiable data will not be shared with or sold to third parties without your explicit consent. We may use anonymized and aggregated data for industry reports, trend analysis, and marketing purposes. Access to your data is restricted to authorized personnel of FasTraT POS LLC for the purposes outlined in this document.</p>
 </div>
+<div class="flex flex-col gap-3">
+<h2 class="text-lg font-bold text-primary dark:text-white">5. Credits, Reviews, and Visibility</h2>
+<p class="text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-300">By contributing new products to the PMD, you are eligible to earn credits. The review and approval process for these contributions will be managed by our data team. Approved contributions and their statuses will be visible on your FTx Pulse Dashboard.</p>
+</div>
+<div class="flex flex-col gap-3">
+<h2 class="text-lg font-bold text-primary dark:text-white">6. Security &amp; Confidentiality</h2>
+<p class="text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-300">We are committed to protecting your data. We implement industry-standard security measures, including encryption, access controls, and regular security audits, to safeguard your information against unauthorized access, disclosure, or destruction.</p>
+</div>
+<div class="flex flex-col gap-3">
+<h2 class="text-lg font-bold text-primary dark:text-white">7. Data Retention</h2>
+<p class="text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-300">Your data will be retained as long as you are an active participant in the FTx Pulse program. If you choose to opt-out, your personally identifiable data will be removed from our active systems in accordance with our data retention policy.</p>
+</div>
+<div class="flex flex-col gap-3">
+<h2 class="text-lg font-bold text-primary dark:text-white">8. International Transfers</h2>
+<p class="text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-300">Your information may be transferred to, and maintained on, computers located outside of your state, province, country, or other governmental jurisdiction where the data protection laws may differ from those from your jurisdiction.</p>
+</div>
+<div class="flex flex-col gap-3">
+<h2 class="text-lg font-bold text-primary dark:text-white">9. Your Rights &amp; Choices</h2>
+<p class="text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-300">You have the right to access, correct, or delete your data at any time. You can also opt-out of the FTx Pulse program, which will cease any further data collection from your account. Please contact our support team to exercise these rights.</p>
+</div>
+<div class="flex flex-col gap-3">
+<h2 class="text-lg font-bold text-primary dark:text-white">10. How we process the data?</h2>
+<p class="text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-300">Your data will be synchronized with FTx Pulse on a daily, depending on the configured schedule. A scheduled cron job will execute the synchronization process, comparing your account data with the Master Database to ensure accuracy and consistency. All updates and results from this synchronization will be reflected on your FTx Pulse Dashboard, where you can review the latest insights and status changes.</p>
+</div>
+<div class="flex flex-col gap-3">
+<h2 class="text-lg font-bold text-primary dark:text-white">11. Authority to Share</h2>
+<p class="text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-300">By agreeing to this consent, you confirm that you are the rightful owner of the store data or have been granted the necessary authority by the owner to share this data with FasTraT POS LLC for the purposes described herein.</p>
+</div>
+<div class="flex flex-col gap-3">
+<h2 class="text-lg font-bold text-primary dark:text-white">12. Changes to this Consent &amp; Disclosure</h2>
+<p class="text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-300">We may update this Consent &amp; Disclosure from time to time. We will notify you of any significant changes and will require your renewed consent to continue your participation in the program.</p>
+</div>
+<div class="flex flex-col gap-3">
+<h2 class="text-lg font-bold text-primary dark:text-white">Contact</h2>
+<p class="text-sm font-normal leading-relaxed text-slate-600 dark:text-slate-300">If you have any questions or concerns about this Consent &amp; Disclosure, please contact us at <a class="font-medium text-primary hover:underline" href="mailto:support@fastratpos.com">support@fastratpos.com</a>.</p>
+</div>
+</div>
+</div>
+<div class="p-8 flex-shrink-0 bg-white dark:bg-[#1a233a]">
 <div class="flex flex-col items-center gap-4 pt-2">
 <label class="flex cursor-pointer items-center gap-x-3">
-<input class="h-5 w-5 rounded border-2 border-slate-300 dark:border-slate-600 bg-transparent text-primary checked:border-primary checked:bg-primary focus:ring-0 focus:ring-offset-0 dark:checked:border-primary dark:checked:bg-primary" style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27white%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e'); background-image: var(--checkbox-tick-svg);" type="checkbox" x-model="agreed"/>
+<input class="h-5 w-5 rounded border-2 border-slate-300 dark:border-slate-600 bg-transparent text-primary checked:border-primary checked:bg-primary focus:ring-0 focus:ring-offset-0 dark:checked:border-primary dark:checked:bg-primary" onchange="document.querySelector('#continue-btn').disabled = !this.checked" style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27white%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e'); background-image: var(--checkbox-tick-svg);" type="checkbox"/>
 <span class="text-sm text-slate-600 dark:text-slate-300">I agree to the <a class="font-medium text-primary hover:underline" href="#">Terms of Use</a> and <a class="font-medium text-primary hover:underline" href="#">Privacy Policy</a>.</span>
 </label>
 <div class="flex w-full flex-col gap-3 sm:flex-row">
 <button class="flex-1 rounded-lg border border-slate-300 dark:border-slate-600 px-6 py-2.5 text-center font-semibold text-slate-600 dark:text-slate-300 transition-colors hover:bg-slate-100 dark:hover:bg-slate-700">NOT NOW</button>
-<button :disabled="!agreed" class="flex-1 rounded-lg bg-primary px-6 py-2.5 text-center font-semibold text-white transition-colors hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-50" onclick="window.location.href='verification start.html'">CONTINUE</button>
+<button class="flex-1 rounded-lg bg-primary px-6 py-2.5 text-center font-semibold text-white transition-colors hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-50" disabled="" id="continue-btn">CONTINUE</button>
 </div>
 </div>
 </div>
 </div>
 </div>
-<script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
 </body></html>
